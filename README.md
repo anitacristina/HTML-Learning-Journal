@@ -4,12 +4,12 @@
 
 ### I Love Code Learning
 
-** Hi, My name is Anita Christina
+** Hi, My name is Anita Christina**
 
 - Here is an example of a table of contents for a learning journal.
 
 Table of Contents
-- [Mark Down Examples from Class one - 102 ](/Test MD.md)
+- [Mark Down Examples from Class one - 102](/Test MD.md)
 
 
 
