@@ -1,2 +1,2 @@
 # HTML-Learning-Journal
-102 Learning Journal
+## 102 Learning Journal
