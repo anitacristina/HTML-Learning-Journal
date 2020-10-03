@@ -2,57 +2,70 @@
 <html>
     <head>
         <style>
-            h1 {text-align: center;} 
-            aside {
-              width: 30%;
-              padding-left: 15px;
-              margin-left: 15px;
-              float: right;
-              font-style: italic;
-              background-color: gray;
+            h2 {margin-left: 40px;
+                color: maroon;
+                text-align:center;
+                font-weight: bolder;
+                font-size: xx-large;
+              } 
+            
+        
+            nav ul li
+            {
+                color: blueviolet;
+                display :inline;
+                border-width: 2px;
+                font-size: x-large
+
             }
             
-            .highlight{
-                background-color: red;
-            }
             
-            p{
-                background-color: green;
-            }
-            
+
             
             </style>
         <title>Anita's Kitchen</title>
-    </head>
+        
 
-    <body style="background-color:Lavender;">
+         <link rel = "stylesheet" href ="css/mystyle.css"></link>
+
+        </head>
+
+    <body>
      <header> 
         <h1> Anita's Kitchen </h1>
-        <h2> Delicious Recipes for your home </h2>    
-         <marquee>
-            <b style="color: darkcyan"> Welcome to my Kitchen World </b> 
-        </marquee>
+        <h2> Delicious Recipes For Your Home </h2>    
+
+         <marquee id = "markstyle"> Welcome to my Kitchen World </marquee>
         <nav>
-            <ol>
-                <li> <a href="https://google.com">Google Search</a></li>
-                <li> <a href = "https://www.indianhealthyrecipes.com/recipes/veg-recipes/" target="_blank"> Vegetarian Dishes</a></li>
-                <li> <a href = "https://www.indianhealthyrecipes.com/recipes/non-veg/"> Non-Vegetarian Dishes</a></li>
-                <li> <a href = "https://www.indianhealthyrecipes.com/recipes/sweets-desserts/">Sweets </a></li>
-                <li> <a href = "https://www.indianhealthyrecipes.com/recipes/snacks/"> Snacks</a></li>
-            </ol>
+            
+            <ul>
+                <li> <button class ="box"> HOME </button></li>
+                <li> <button class ="box"> ABOUT US </button></li>
+
+                <li> <a href = "https://www.indianhealthyrecipes.com/recipes/veg-recipes/" target="_blank" class = "box"> VEG-RECIPES</a></li>
+            
+                <li> <a href = "https://www.indianhealthyrecipes.com/recipes/non-veg/" target="_blank" class = "box"> NON-VEG RECIPES</a></li>
+            
+                <li> <a href = "https://www.indianhealthyrecipes.com/recipes/sweets-desserts/" target="_blank" class = "box">SWEETS </a></li>
+           
+                <li> <a href = "https://www.indianhealthyrecipes.com/recipes/snacks/" target="_blank"  class = "box"> SNACKS</a></li>
+
+                <li> <button class ="box"> CONTACT US </button></li>
+            </ul>
         </nav>
      </header>
      <main>
-        <aside>
-            <h3> My Blogspots </h3>
-          <p> Links to my existing blogspots </p>
-            <a href = "https://successfulsamayal.blogspot.com/"> Successful Samayal </a>
-            <br>
-            <br>
-            <a href = "https://suryaoli.blogspot.com/"> Suryaoli </a>
-            
-          </aside>
+      
          <p> Welcome to Anita's Kitchen. My passion is cooking and baking. I love to share my new authentic recipes with everyone. Happy Learning!!. Hope you all like it!!! </p>
+         <aside>
+            <h3> MY BLOGSPOTS  </h3>
+                <p> Links to my existing blogspots </p>
+                <a href = "https://successfulsamayal.blogspot.com/" target="_blank" class = "anitablog"> Successful Samayal </a>
+                <br>
+                <br>
+                <a href = "https://suryaoli.blogspot.com/"target ="_blank" class = "anitablog" > Suryaoli </a>
+           
+          </aside>
         <img src="https://s3-media0.fl.yelpcdn.com/bphoto/QME5VsRR7skOoLfSk3WYuA/o.jpg" alt="My Kitchen" width="977" height="627">
         <ul>
             <li> <img src ="https://live.staticflickr.com/166/349596576_4cc7ea9caf_c.jpg" alt="Indian Veggies" width="577" height="427"> </li>
