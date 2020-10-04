@@ -52,7 +52,10 @@ aside h3+p {
 
 }
 
-
+.imagesize{
+    width: 50%;
+    height: auto;
+}
 .box {
     clear: both;
     background-color: #4291a8;
