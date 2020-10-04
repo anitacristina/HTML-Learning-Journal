@@ -1,5 +1,8 @@
 /* Used HSLA for Color*/
 
+ /**{
+    border: dashed 1px #000000;
+}*/
 body { background-color: hsla(200,80%,80%,0.5) ;}
 
 /* used  Hex code for Color*/
@@ -51,6 +54,7 @@ aside h3+p {
 
 
 .box {
+    clear: both;
     background-color: #4291a8;
     border: rgb(17, 124, 113);
     color: rgb(12, 1, 1);
