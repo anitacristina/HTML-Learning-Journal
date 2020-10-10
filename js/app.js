@@ -13,6 +13,12 @@ let recipes = confirm ( 'Are you looking for Indian Recipes ?');
 
 alert ( 'Thank you for your confirmation');
 
+var favcolor = prompt ('Enter your favorite color');
+
+alert ('The background color is set to ' + favcolor);
+
+
+
 // variable declaration for greeting
 var greeting;
 
@@ -44,5 +50,6 @@ document.write ('<h1 style = "color: BLUE ">'+ greeting + '</h1>');
 var header = document.getElementById ('removeThis');
 header.remove();
 
+document.body.style.backgroundColor = favcolor;
 
 
