@@ -7,7 +7,7 @@
 
  alert ('Hello, ' + userName + ' Click  OK to continue');
 
-var hourNow = prompt ('Enter the time in hours:');
+//var hourNow = prompt ('Enter the time in hours:');
 
 let recipes = confirm ( 'Are you looking for Indian Recipes ?');
 
@@ -18,9 +18,26 @@ var favcolor = prompt ('Enter your favorite color');
 alert ('The background color is set to ' + favcolor);
 
 
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow > 18) {
+    greeting = 'Good Evening! ';
+} else if (hourNow > 12) {
+    greeting = 'Good Afternoon! ';
+} else if (hourNow > 0) {
+    greeting = 'Good Morning! ';
+} else {
+    greeting = 'Welcome!';
+}
+
+//document.write('<h3>' + greeting + '</h3>');
+
+
 
 // variable declaration for greeting
-var greeting;
+/*var greeting;
 
 if (hourNow >= 0 && hourNow < 7)
 {
@@ -46,9 +63,11 @@ else
    'Have a Great Day!!';
 }
 
-document.write ('<h1 style = "color: BLUE ">'+ greeting + '</h1>');
-var header = document.getElementById ('removeThis');
-header.remove();
+//document.write ('<h1 style = "color: BLUE ">'+ greeting + '</h1>');
+//var header = document.getElementById ('removeThis');
+//header.remove();*/
+
+document.getElementById('greeting-placeholder').textContent = greeting + userName;
 
 document.body.style.backgroundColor = favcolor;
 
