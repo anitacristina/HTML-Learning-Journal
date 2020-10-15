@@ -5,9 +5,19 @@
 //var marqueName; 
  var userName = prompt('Please enter your first name');
 
- alert ('Hello, ' + userName + ' Click  OK to continue');
+ var field;
+while(true){
+    var dish = prompt("What do you like? (Veg, White Meat, Red Meat, or Seafood )");
+    if(!dish || /^(Veg|White Meat|Red Meat|Seafood)$/.test(dish))
+    {
+        field =  ("Veg|White Meat|Red Meat|Seafood".split("|").indexOf(dish)+1);
+        break;
+    }else{
+        alert("Please enter a valid item");
+    }
+}
 
-//var hourNow = prompt ('Enter the time in hours:');
+
 
 let recipes = confirm ( 'Are you looking for Indian Recipes ?');
 
@@ -22,53 +32,37 @@ var today = new Date();
 var hourNow = today.getHours();
 var greeting;
 
-if (hourNow > 18) {
+if (hourNow >= 18) 
+{
     greeting = 'Good Evening! ';
-} else if (hourNow > 12) {
+} 
+else if (hourNow >= 12) 
+{
     greeting = 'Good Afternoon! ';
-} else if (hourNow > 0) {
+} 
+else if (hourNow >= 0) 
+{
     greeting = 'Good Morning! ';
-} else {
+} 
+else 
+{
     greeting = 'Welcome!';
 }
 
-//document.write('<h3>' + greeting + '</h3>');
-
-
-
-// variable declaration for greeting
-/*var greeting;
-
-if (hourNow >= 0 && hourNow < 7)
+function adduserName()
 {
-   greeting = 'Good Morning ' + userName;
-}
-else if (hourNow >=7 && hourNow < 12)
-{
-   greeting= 'Good Mid Day ' + userName;
-}
-else if (hourNow >=12 && hourNow < 18) 
-{
-    greeting = 'Good Afternoon ' + userName;
-    
-}
-else if (hourNow >=18 && hourNow <=24)
-{
-    greeting = 'Good Evening ' + userName;
-
+    var at = document.getElementById('greeting-placeholder');
+    at.textContent = greeting + userName;
 }
 
-else 
+function dishItem()
 {
-   'Have a Great Day!!';
+    var ts = document.getElementById('favorite');
+     ts.innerHTML = ' Great! You Like ' + dish;
 }
 
-//document.write ('<h1 style = "color: BLUE ">'+ greeting + '</h1>');
-//var header = document.getElementById ('removeThis');
-//header.remove();*/
-
-document.getElementById('greeting-placeholder').textContent = greeting + userName;
 
 document.body.style.backgroundColor = favcolor;
 
-
+adduserName();
+dishItem();
