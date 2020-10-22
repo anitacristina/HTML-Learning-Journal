@@ -62,7 +62,19 @@ function dishItem()
 }
 
 
+var num = prompt("Select a number between 1 and 4", "");
+
+var myImage = myImage(300, 200);
+
+myImage.src = ".jpg"
+
+function imagedisp() 
+{
+	document.images.src=
+}
 document.body.style.backgroundColor = favcolor;
 
 adduserName();
 dishItem();
+
+imagedisp();
