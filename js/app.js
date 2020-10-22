@@ -62,16 +62,17 @@ function dishItem()
 }
 
 
-var num = prompt("Select a number between 1 and 4", "");
+var num = prompt("Select a number between 1 and 4";);
 
 var myImage = myImage(300, 200);
 
-myImage.src = ".jpg"
+myImage.src = "Images/North_Indian.jpg"
 
 function imagedisp() 
 {
-	document.images.src=
+	document.images.src=myImage(num);
 }
+
 document.body.style.backgroundColor = favcolor;
 
 adduserName();
