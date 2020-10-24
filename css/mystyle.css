@@ -155,3 +155,18 @@ main > h2{
       margin-bottom:50px;
       text-align: center;
   }
+  div > h5{
+    clear: both;
+    font-size: x-large;
+    text-align: center; 
+    color :rgb(44, 44, 38);
+
+}
+
+div > h6{
+    clear: both;
+    font-size: larger;
+    text-align: center; 
+    color :rgb(130, 134, 175);
+
+}

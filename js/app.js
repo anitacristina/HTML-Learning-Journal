@@ -1,18 +1,42 @@
 'use strict';
 
  console.log('This file is connected and ready to run');
+ var userName;
+ 
+ userNamevalidation(); 
+ 
+ function userNamevalidation() 
+ {
+    userName = prompt("Please enter your name:");
+    
+    if (userName == null || userName == "") 
+    {
+      alert("You must enter your name in the prompt box!");
+      userNamevalidation();
+    } else if (!/^[a-zA-Z]+$/.test(userName)) 
+    {
+      alert("Please only enter letters");
+      userNamevalidation();
+    } else 
+    {
+      alert("Your Name was accepted");
+    }
+  }
 
-//var marqueName; 
- var userName = prompt('Please enter your first name');
 
  var field;
 while(true){
-    var dish = prompt("What do you like? (Veg, White Meat, Red Meat, or Seafood )");
-    if(!dish || /^(Veg|White Meat|Red Meat|Seafood)$/.test(dish))
+    var dish = prompt("What do you like? (Veg, WhiteMeat, RedMeat, or Seafood )");
+
+    dish=dish.toLowerCase ();
+    
+    if(!dish || /^(veg|whitemeat|redmeat|seafood)$/.test(dish))
     {
-        field =  ("Veg|White Meat|Red Meat|Seafood".split("|").indexOf(dish)+1);
+        field =  ("veg|whitemeat|redmeat|seafood".split("|").indexOf(dish)+1);
         break;
-    }else{
+    }
+    else
+    {
         alert("Please enter a valid item");
     }
 }
@@ -27,6 +51,18 @@ var favcolor = prompt ('Enter your favorite color');
 
 alert ('The background color is set to ' + favcolor);
 
+var smiles = prompt('How many smiles do you want?');
+
+for (var i=0; i<smiles; i++ )
+{
+    var img = document.createElement("img");
+    img.src = "Images/smiley.jpg";
+    img.width = 50;
+    img.height = 50;
+    img.alt = "Rating";
+    var src = document.getElementById("rate").appendChild (img);
+    
+}
 
 var today = new Date();
 var hourNow = today.getHours();
@@ -61,21 +97,15 @@ function dishItem()
      ts.innerHTML = ' Great! You Like ' + dish;
 }
 
-
-var num = prompt("Select a number between 1 and 4";);
-
-var myImage = myImage(300, 200);
-
-myImage.src = "Images/North_Indian.jpg"
-
-function imagedisp() 
+function showCounter()
 {
-	document.images.src=myImage(num);
+    var td = document.getElementById('counter');
+     td.innerHTML = 'Counter - ' + smiles;
 }
+
 
 document.body.style.backgroundColor = favcolor;
 
 adduserName();
 dishItem();
-
-imagedisp();
+showCounter();
